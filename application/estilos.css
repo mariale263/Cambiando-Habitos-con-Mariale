@@ -84,11 +84,12 @@ nav > ul > li
 {
     display: inline-block;    
     right: 50%;
-    float: left;
+    /*float: left;*/
     position: relative;
 }
  
 /*Hovers*/
+
 /*nav ul li:hover
 {
        
