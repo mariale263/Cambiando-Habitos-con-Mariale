@@ -101,10 +101,12 @@ nav ul li:hover > a
 	color: gray;
 }
 
-.subnivel li a{
-	color: black;
+.subnivel li a:hover{
+	color: #c3440d;
 	
 }
+
+
 
 .subnivel li{
 	background-color: rgb(253, 253, 253);
@@ -163,4 +165,10 @@ nav ul li ul li > ul li
 nav ul li ul li:hover > ul
 {
     display: block;   /*Mostramos cuando se haga hover sobre un sub-items*/
+}
+
+/*FIGURE*/
+
+.figure img{
+    width: 100%;
 }

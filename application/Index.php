@@ -7,13 +7,13 @@
 	</head>  
 	<body> 
 		<div class="contenedor">
-			<header>
-				<hgroup>
-						<h1>CAMBIANDO HÁBITOS CON MARIALE</h1>
-						<h3>HABITOS DE VIDA SALUDABLE</h3>
-				</hgroup>	
 
-			</header>
+			<!-- Nuestro header -->
+			
+			<?php 
+				include_once("header.html") 
+			?>
+			
 			<!-- Nuestro menú -->
 			<nav>
 				<ul>
@@ -44,14 +44,14 @@
 					<li><a href="#">CONTACTO</a></li>               
 				</ul>
 			</nav>
-			<section>
+			<figure class="figure">
 				<img src="https://cambiandohabitosconmariale.files.wordpress.com/2017/09/cropped-cropped-healthy-2462236_19201.jpg" alt="imagen1"></img>
 				<h2>CAMBIANDO HABITOS CON MARIALE</h2>
 				<p>
 				Hola soy Mariale, en este blog encontraran todo sobre mi, ¿Quién soy?, mi salud, las bases de mi alimentación, sobre mi perdida de peso, 
 				también encontrarán recetas y menús de los platos que consumo a diario.
 				</p>
-			</section>
+			</figure>
 			<article>
 				<div>
 					<h3>TARTA DE AVENA Y PLATANO ESTILO BROWNIE</h3>
