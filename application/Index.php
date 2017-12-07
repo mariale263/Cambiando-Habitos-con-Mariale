@@ -11,7 +11,7 @@
 			<!-- Nuestro header -->
 			
 			<?php 
-				include_once("header.html") 
+				include_once("header.php") 
 			?>
 			
 			<!-- Nuestro menú -->
