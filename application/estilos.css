@@ -1,33 +1,165 @@
-.menu ul {
-	display: flex;
-	padding: 0;
-	margin: 0;
-	list-style: none;
+*
+{
+    padding: 0;
+    margin: 0;
 }
-.menu a {
-	display: block;
-	padding: 2em;
-	background-color: #f25f70;
-	text-decoration: none;
-	color: #191C26;
+
+
+
+html,body
+{
+    font-family: 'oswald', sans-serif, serif;
+	font-size: 100%;
+	background-image: url(https://i0.wp.com/colourlovers.com.s3.amazonaws.com/images/patterns/2503/2503698.png)
 }
-.menu a:hover {
-	background-color: #CC673B;
-}
-.menu .menu1 li .menu2 {
-	display: none;
+
+.contenedor{
+	width: 88%;
+	margin: 0 auto;
 	
 }
-.menu .menu2 li .menu3{
-	display: none;
+
+header{
+
+	margin: 0 auto;
+    background-color: white;
+    padding: 30px;
 }
 
-.menu .menu1 li a:hover + .menu2, .menu .menu1 li .menu2:hover {
-	display: block;
+hgroup h1 {
+    text-align: center;
+	font-family: inherit;
+	color: #333333;
+	font-weight: inherit;
+	padding: 10px;
+}
+
+hgroup h3{
+	text-align: center;
+    font-family: "Libre Baskerville",serif;
+    color: #333333;
+    font-weight: inherit;
+    font-size: 1.2em;
+    
+
+}
+
+nav
+{
+    float: left;
+    width: 100%;
+	background-color: #fbaa86;
+	font-family: "Libre Baskerville",serif;;
+   
+}
+ul
+{
+    list-style: none; /*quitamos las viñetas*/
+    margin: 0; /*formateamos los margenes*/
+ 
+}
+li
+{
+    padding: 20px 30px; 
+    background-color: #fbaa86;
+}
+ 
+li > a
+{
+    text-decoration: none;   /*quitamos el subrayado*/
+    color:#444; /*Color fuente*/
+     /* font-weight: 700; Ancho fuente */
+    font-size: 1.2em; /* Tamaño relativo fuente*/
+}
+ 
+/* Nivel 1*/
+nav > ul
+{
+    padding-left: 50%;
+    position: relative;
+    float: left;
+}
+/* Items del nivel 1*/
+nav > ul > li
+{
+    display: inline-block;    
+    right: 50%;
+    float: left;
+    position: relative;
+}
+ 
+/*Hovers*/
+/*nav ul li:hover
+{
+       
+}*/
+
+nav ul li:hover > a
+{
+	
+	color: gray;
+}
+
+.subnivel li a{
+	color: black;
+	
+}
+
+.subnivel li{
+	background-color: rgb(253, 253, 253);
+    padding: 12px 12px 10px 19px;
+    margin: 0px 32px 0px 0px;
+}
+
+.subnivel li:hover {
+    background-color: #efecec;
 }
 
 
-.menu .menu2 li a:hover + .menu3, .menu .menu2 li .menu3:hover {
-	display: block;
-	position: relative;
+ 
+/*Sub nivel 1*/
+nav ul li > ul 
+{
+    position: absolute;
+    left: 0;
+    top:101%; /* lo posicionamos justo debajo de cada items*/
+    display: none; /*Ocultamos el sub nivel*/
+}
+ 
+/*Sub-items sub-nivel 1*/
+nav ul li > ul li
+{
+    display: block;
+    width: 100%;
+    position: relative;
+}
+/*hover*/
+nav ul li:hover > ul 
+{
+    display: block; /*Cuando se haga hover sobre algun item mostramos el sub-nivel 1*/
+}
+ 
+/* Sub nivel 2*/
+nav ul li ul li > ul 
+{
+    position: absolute;
+    left:100%; /*posicionamos el sub nivel 2 a la derecha del sub nivel 1*/
+    top:0;
+    display: block;
+    width: 100%;
+    display: none;
+    
+}
+ 
+/*Sub-items sub-nivel 2*/
+nav ul li ul li > ul li
+{
+    width: auto; /*Para que se ajuste al padre*/
+    border-left: none; /*Eliminamos bordes heredados*/
+    border-right: none;
+}
+ 
+nav ul li ul li:hover > ul
+{
+    display: block;   /*Mostramos cuando se haga hover sobre un sub-items*/
 }
