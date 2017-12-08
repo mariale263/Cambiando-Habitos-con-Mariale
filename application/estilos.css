@@ -10,7 +10,7 @@ html,body
 {
     font-family: 'oswald', sans-serif, serif;
 	font-size: 100%;
-	background-image: url(https://i0.wp.com/colourlovers.com.s3.amazonaws.com/images/patterns/2503/2503698.png)
+	background-image: url(../img/2503698.png)
 }
 
 .contenedor{
@@ -75,16 +75,14 @@ li > a
 /* Nivel 1*/
 nav > ul
 {
-    padding-left: 50%;
+    
     position: relative;
-    float: left;
+    
 }
 /* Items del nivel 1*/
 nav > ul > li
 {
-    display: inline-block;    
-    right: 50%;
-    /*float: left;*/
+    display: inline-block;
     position: relative;
 }
  
@@ -167,8 +165,66 @@ nav ul li ul li:hover > ul
     display: block;   /*Mostramos cuando se haga hover sobre un sub-items*/
 }
 
-/*FIGURE*/
+/*figure clase imagen1*/
 
-.figure img{
+.imagen1 img{
     width: 100%;
 }
+
+.articuloprincipal{
+    background: #fff;
+    box-shadow: rgba(0,0,0, 0.1) 0 1px 2px;
+    margin: 10px 325px;
+    opacity: 0.95;
+    padding: 33px 9px 88px 9px;
+    width: 425px;
+    position: absolute;
+    top: 205px;
+}
+
+article.articulo1 {
+    padding: 0px 15px;
+}
+
+.articulo1 h1{
+    text-align: center;
+    font-family: inherit;
+    font-size: 28px;
+	color: #333333;
+	font-weight: inherit;
+    padding: 15px;
+    
+}
+
+.articulo1 p{
+    font-family: "Libre Baskerville",serif;;
+    font-size: 20px;
+    color: #636161;
+}
+
+/*segundo contenedor de los 3 articulos*/
+
+.contenedor2{
+    background-color: white;
+    display: flex;
+}
+
+.guion::before, 
+.guion::after{
+    content: " - ";
+}
+
+.aside1 img, 
+.aside2 img, 
+.aside3 img{
+    width: 50%;
+    
+}
+
+.aside1, .aside2, .aside3{
+    width: 122%;
+    text-align: center;
+    padding: 40px;
+    margin: 33px 0px 147px 0px;
+}
+

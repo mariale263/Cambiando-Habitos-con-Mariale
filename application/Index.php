@@ -8,66 +8,60 @@
 	<body> 
 		<div class="contenedor">
 
-			<!-- Nuestro header -->
+			<!-- Nuestro header y nuestro menu de navegacion -->
 			
 			<?php 
 				include_once("header.php") 
 			?>
 			
-			<!-- Nuestro menú -->
-			<nav>
-				<ul>
-					<!-- Primer nivel -->
-					<li><a title="Inicio" href="#">INICIO</a></li>
-					<li><a href="#">SOBRE MI</a>
-						<ul class="subnivel">
-							<!-- Segundo nivel -->
-							<li><a href="#">¿Quién soy?</a></li>
-							<li><a href="#">Mi salud</a></li>
-							<li><a href="#">Bases de mi alimentación</a></li>
-						</ul>
-					</li>
-					<li><a href="#">RECETAS</a>
-						<ul class="subnivel">
-							<li><a href="#">Desayunos</a>
-								<ul class="subnivel">
-									<!-- Tercer nivel -->
-									<li><a href="#">Pan</a></li>
-									
-								</ul>
-							</li>
-							<li><a href="#">Comidas</a></li>
-							<li><a href="#">Meriendas</a></li>
-							<li><a href="#">Cenas</a></li>
-						</ul>
-					</li>
-					<li><a href="#">CONTACTO</a></li>               
-				</ul>
-			</nav>
-			<figure class="figure">
-				<img src="https://cambiandohabitosconmariale.files.wordpress.com/2017/09/cropped-cropped-healthy-2462236_19201.jpg" alt="imagen1"></img>
-				<h2>CAMBIANDO HABITOS CON MARIALE</h2>
-				<p>
-				Hola soy Mariale, en este blog encontraran todo sobre mi, ¿Quién soy?, mi salud, las bases de mi alimentación, sobre mi perdida de peso, 
-				también encontrarán recetas y menús de los platos que consumo a diario.
-				</p>
-			</figure>
-			<article>
-				<div>
-					<h3>TARTA DE AVENA Y PLATANO ESTILO BROWNIE</h3>
-					<img src="" alt=""></img>
-					<a title="tarta de avena y platano estilo brownie" href="#">xx</a>
-								
-				</div>
-				<div>
-					<h3>AREPAS INTEGRALES</h3>
-					<img src="" alt=""></img>
-				</div>
-				<div>
-					<h3>CREPS DE HARINA DE TRIGO INTEGRAL Y SEMILLAS DE CHIA</h3>
-					<img src="" alt=""></img>
-				</div>
-			</article>
+            <!-- Cuerpo de imagen y articulo -->
+            
+			<figure class="imagen1">
+				<img src="../img/imagenprincipal.jpg" alt="imagen1"></img>
+                    <div class="articuloprincipal">
+                        <article class="articulo1">
+                            <h1>CAMBIANDO HÁBITOS CON MARIALE</h1>
+                            <p>
+                            Hola soy Mariale, en este blog encontraran todo sobre mi, ¿Quién soy?, mi salud, las bases de mi alimentación, sobre mi perdida de peso, 
+                            también encontrarán recetas y menús de los platos que consumo a diario.
+                            </p>
+                        </article>
+                    </div>
+            </figure>
+            
+            <div class="contenedor2">
+                <div class="aside1">
+                    <aside class="aside">
+                        <h3 class="guion">TARTA DE AVENA Y PLATANO ESTILO BROWNIE</h3>
+                        <a title="tarta de avena y platano estilo brownie" href="#">
+                            <img src="../img/tartabrownie.jpg" alt=""></img>
+                        </a>
+                    
+                        <a title="tarta de avena y platano estilo brownie" href="#">Leer más...</a>
+                    </aside>           
+                </div>
+                
+                <div class="aside2">
+                    <aside class="aside">
+                        <h3 class="guion">AREPAS DE ESPINACAS MUY RICAS Y SALUDABLES (HEALTHY)</h3>
+                        <a title="arepas integrales" href="#">
+                            <img src="../img/arepasintegrales.jpg" alt=""></img>
+                        </a>
+                    
+                        <a title="arepas integrales" href="#">Leer más...</a>
+                    </aside>
+                </div>
+                <div class="aside3">
+                    <aside class="aside">    
+                        <h3 class="guion">CREPS DE HARINA DE TRIGO INTEGRAL Y SEMILLAS DE CHIA</h3>
+                        <a title="creps de harina de trigo" href="#">
+                            <img src="../img/creps.jpeg" alt=""></img>
+                        </a>
+                    
+                        <a title="cresps de harina de trigo" href="#">Leer más...</a>
+                    </aside>
+                </div>
+            </div> 
 			
 			<footer>
 				<p>
