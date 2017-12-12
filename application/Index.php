@@ -11,21 +11,29 @@
 			<!-- Nuestro header y nuestro menu de navegacion -->
 			
 			<?php 
-				include_once("header.php") 
+				include_once("..//templates/header.php") 
 			?>
 			
             <!-- Cuerpo de imagen y articulo -->
             
 			<figure class="imagen1">
 				<img src="../img/imagenprincipal.jpg" alt="imagen1"></img>
-                    <div class="articuloprincipal">
-                        <article class="articulo1">
-                            <h1>CAMBIANDO HÁBITOS CON MARIALE</h1>
-                            <p>
-                            Hola soy Mariale, en este blog encontraran todo sobre mi, ¿Quién soy?, mi salud, las bases de mi alimentación, sobre mi perdida de peso, 
-                            también encontrarán recetas y menús de los platos que consumo a diario.
-                            </p>
-                        </article>
+                    <div class="articuloPrincipal">
+                        <div class="contenedorExterno">
+                            <div class="contenedorInterior">
+                                <article class="articulo1">
+                                    <header class="headerInterno">
+                                        <h1>CAMBIANDO HÁBITOS CON MARIALE</h1>
+                                    </header>
+                                    <div class="contenidoInterno">
+                                        <p>
+                                        Hola soy Mariale, en este blog encontraran todo sobre mi, ¿Quién soy?, mi salud, las bases de mi alimentación, sobre mi perdida de peso, 
+                                        también encontrarán recetas y menús de los platos que consumo a diario.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
                     </div>
             </figure>
             
@@ -37,7 +45,7 @@
                             <img src="../img/tartabrownie.jpg" alt=""></img>
                         </a>
                     
-                        <a title="tarta de avena y platano estilo brownie" href="#">Leer más...</a>
+                        <a class="textoPie" title="tarta de avena y platano estilo brownie" href="#">Leer más...</a>
                     </aside>           
                 </div>
                 
@@ -48,7 +56,7 @@
                             <img src="../img/arepasintegrales.jpg" alt=""></img>
                         </a>
                     
-                        <a title="arepas integrales" href="#">Leer más...</a>
+                        <a class="textoPie" title="arepas integrales" href="#">Leer más...</a>
                     </aside>
                 </div>
                 <div class="aside3">
@@ -58,18 +66,14 @@
                             <img src="../img/creps.jpeg" alt=""></img>
                         </a>
                     
-                        <a title="cresps de harina de trigo" href="#">Leer más...</a>
+                        <a class="textoPie" title="cresps de harina de trigo" href="#">Leer más...</a>
                     </aside>
                 </div>
             </div> 
-			
-			<footer>
-				<p>
-					Sitio web creado por Mariale_263
-				</p>
-				
-			</footer>
-			
+            <!-- Nuestro Footer -->
+			<?php 
+				include_once("..//templates/footer.php") 
+			?>			
 		</div>
 	</body>
 </html>  

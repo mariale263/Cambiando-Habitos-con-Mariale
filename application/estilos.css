@@ -30,28 +30,29 @@ hgroup h1 {
     text-align: center;
 	font-family: inherit;
 	color: #333333;
-	font-weight: inherit;
+    font-weight: 400;
 	padding: 10px;
 }
 
 hgroup h3{
 	text-align: center;
     font-family: "Libre Baskerville",serif;
-    color: #333333;
-    font-weight: inherit;
-    font-size: 1.2em;
-    
+    font-weight: normal;
+    font-style: normal; 
 
 }
 
 nav
 {
-    float: left;
-    width: 100%;
+   
 	background-color: #fbaa86;
 	font-family: "Libre Baskerville",serif;;
-   
+    z-index: 999;
+    position: relative;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
 }
+
+
 ul
 {
     list-style: none; /*quitamos las viñetas*/
@@ -71,12 +72,18 @@ li > a
      /* font-weight: 700; Ancho fuente */
     font-size: 1.2em; /* Tamaño relativo fuente*/
 }
+
+.punto:after{
+    color: #feede6;
+    content: " \2022";
+    margin-left: 1em;
+}
  
 /* Nivel 1*/
 nav > ul
 {
     
-    position: relative;
+    text-align: center;
     
 }
 /* Items del nivel 1*/
@@ -84,6 +91,7 @@ nav > ul > li
 {
     display: inline-block;
     position: relative;
+    padding: 1em 1em 1em 0px;
 }
  
 /*Hovers*/
@@ -108,8 +116,8 @@ nav ul li:hover > a
 
 .subnivel li{
 	background-color: rgb(253, 253, 253);
-    padding: 12px 12px 10px 19px;
-    margin: 0px 32px 0px 0px;
+    padding: 1em 1em 0em 1em;
+    text-align: left;
 }
 
 .subnivel li:hover {
@@ -123,7 +131,7 @@ nav ul li > ul
 {
     position: absolute;
     left: 0;
-    top:101%; /* lo posicionamos justo debajo de cada items*/
+    top:100%; /* lo posicionamos justo debajo de cada items*/
     display: none; /*Ocultamos el sub nivel*/
 }
  
@@ -167,23 +175,46 @@ nav ul li ul li:hover > ul
 
 /*figure clase imagen1*/
 
+.imagen1{
+    position: relative;
+    background-color: white;
+}
+
 .imagen1 img{
     width: 100%;
 }
 
-.articuloprincipal{
-    background: #fff;
-    box-shadow: rgba(0,0,0, 0.1) 0 1px 2px;
-    margin: 10px 325px;
-    opacity: 0.95;
-    padding: 33px 9px 88px 9px;
-    width: 425px;
+.articuloPrincipal{
     position: absolute;
-    top: 205px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedorExterno{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedorInterior{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
 }
 
 article.articulo1 {
-    padding: 0px 15px;
+    background: #fff;
+    box-shadow: rgba(0,0,0, 0.1) 0 1px 2px;
+    margin: 0 auto;
+    opacity: 0.95;
+    padding: 1.5em;
+    width: 457px;
+}
+
+.headerInterno{
+    margin-top: 1.5em;
+    padding: 0;
 }
 
 .articulo1 h1{
@@ -200,6 +231,11 @@ article.articulo1 {
     font-family: "Libre Baskerville",serif;;
     font-size: 20px;
     color: #636161;
+    text-align: left;
+}
+.contenidoInterno{
+    margin-bottom: 1.5em;
+    padding: 0
 }
 
 /*segundo contenedor de los 3 articulos*/
@@ -207,6 +243,7 @@ article.articulo1 {
 .contenedor2{
     background-color: white;
     display: flex;
+    padding: 0 0.5em;
 }
 
 .guion::before, 
@@ -214,17 +251,54 @@ article.articulo1 {
     content: " - ";
 }
 
+h3.guion {
+    font-family: "Muli",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3rem;
+    letter-spacing: 0.1em;
+    line-height: 1.7143;
+    margin-bottom: 0.857em;
+    color: #636161;
+    text-align: center;
+}
+
 .aside1 img, 
 .aside2 img, 
 .aside3 img{
-    width: 50%;
-    
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1em;
 }
 
 .aside1, .aside2, .aside3{
     width: 122%;
-    text-align: center;
     padding: 40px;
-    margin: 33px 0px 147px 0px;
+    margin: 1.3em 0em 1.7em 0em;
+}
+
+.textoPie{
+    text-decoration: none;
+    font-family: "Libre Baskerville",serif;
+    font-size: 1.3rem;
+    text-align: left;
+    color: #c3440d; 
+}
+
+.textoPie:hover{
+    color: #aaa;
+}
+
+/*footer*/
+
+footer {
+    background-color: #404040;
+    border-top: 1px solid #d9d9d9;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 24px 34px 24px 34px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
