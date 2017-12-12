@@ -10,11 +10,11 @@
 <nav>
 	<ul>
 		<!-- Primer nivel -->
-		<li class=espacio><a class="punto" title="Inicio" href="#">INICIO</a></li>
+		<li class=espacio><a class="punto" title="Inicio" href="../application/index.php">INICIO</a></li>
 		<li class=espacio><a class="punto" href="#">SOBRE MI</a>
 			<ul class="subnivel">
 				<!-- Segundo nivel -->
-				<li><a href="..//views/quiensoy.php">¿Quién soy?</a></li>
+				<li><a href="../views/quiensoy.php">¿Quién soy?</a></li>
 				<li><a href="#">Mi salud</a></li>
 				<li><a href="#">Bases de mi alimentación</a></li>
 			</ul>
@@ -33,6 +33,6 @@
 				<li><a href="#">Cenas</a></li>
 			</ul>
 		</li>
-		<li><a href="#">CONTACTO</a></li>               
+		<li><a href="../views/contacto.php">CONTACTO</a></li>               
 	</ul>
 </nav>

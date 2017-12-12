@@ -3,7 +3,7 @@
 	<head>    
 		<title>Cambiando Habitos con Mariale</title>    
 		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="../css/estilos.css" />
+		<link rel="stylesheet" type="text/css" href="<?= 'http://' . $_SERVER['SERVER_NAME'] . '/cambiando habitos con mariale/css/estilos.css' ?>" />
 	</head>  
 	<body> 
 		<div class="contenedor">
@@ -13,9 +13,7 @@
 			<?php 
 				include_once("../templates/header.php") 
 			?>
-			<header>
-                <h1>¿Quién soy?</h1>
-            </header>
+			
             <!-- Nuestro Footer -->
 			<?php 
 				include_once("../templates/footer.php") 
