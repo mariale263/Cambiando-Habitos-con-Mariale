@@ -3,7 +3,7 @@
 	<head>    
 		<title>Cambiando Habitos con Mariale</title>    
 		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="../css/estilos.css" />
+		<link rel="stylesheet" type="text/css" href="http://localhost/habitos_saludables/css/estilos.css" />
 	</head>  
 	<body> 
 		<div class="contenedor">

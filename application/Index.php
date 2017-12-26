@@ -3,7 +3,7 @@
 	<head>    
 		<title>Cambiando Habitos con Mariale</title>    
 		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="../css/estilos.css" />
+		<link rel="stylesheet" type="text/css" href="http://localhost/habitos_saludables/css/estilos.css" />
 	</head>  
 	<body> 
 		<div class="contenedor">
@@ -11,7 +11,7 @@
 			<!-- Nuestro header y nuestro menu de navegacion -->
 			
 			<?php 
-				include_once("../templates/header.php") 
+				include_once("templates/header.php") 
 			?>
 			
             <!-- Cuerpo de imagen y articulo -->
@@ -72,7 +72,7 @@
             </div> 
             <!-- Nuestro Footer -->
 			<?php 
-				include_once("../templates/footer.php") 
+				include_once("templates/footer.php") 
 			?>			
 		</div>
 	</body>
